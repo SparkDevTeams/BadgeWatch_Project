@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B4A47398-3D98-4A38-B62E-0366F0A785BF}</ProjectGuid>
+    <ProjectGuid>{3C42DF18-B5DB-4D44-8E9B-134A975C8E5E}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{9AA2D3C6-3393-45F1-8E7C-5A9901728795}</TemplateGuid>
     <OutputType>Library</OutputType>
@@ -87,7 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BadgeWatch\BadgeWatch.csproj">
-      <Project>{1438E1E1-B98F-4F1B-8371-D545A8AA90DE}</Project>
+      <Project>{42EE34A5-6896-4CB5-9991-B8D934E1CCD7}</Project>
       <Name>BadgeWatch</Name>
     </ProjectReference>
   </ItemGroup>

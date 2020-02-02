@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{73523FA0-D61F-42C3-87B5-7F27B8ABF7B6}</ProjectGuid>
+    <ProjectGuid>{F69BB101-1B3D-4D0C-9A9E-CCFB63A14FB5}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{65C0771A-452F-423B-995C-F0AE46E643BA}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -137,7 +137,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\BadgeWatch\BadgeWatch.csproj">
-      <Project>{1438E1E1-B98F-4F1B-8371-D545A8AA90DE}</Project>
+      <Project>{42EE34A5-6896-4CB5-9991-B8D934E1CCD7}</Project>
       <Name>BadgeWatch</Name>
     </ProjectReference>
   </ItemGroup>
