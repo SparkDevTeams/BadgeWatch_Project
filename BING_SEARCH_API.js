@@ -47,6 +47,34 @@ app.get('/news', (req, res) => {
     })    
 })
 
+app.get('/google', (req, res) => {
+    const options = {
+        method : 'GET',
+        url : 'https://www.googleapis.com/customsearch/v1?',
+        headers : {
+            'key' : 'AIzaSyB_zQ6Ytm0-agb9fbkJ0wQxfYtOLkU04nY',
+            'cx': '009293201796466733909:kqyfdfb1hzc',
+            'q': 'police'
+        },
+
+    }
+
+    request(options, function(error, response, body){
+        if(error){
+            throw new Error(error)
+        }else{ 
+
+            body = JSON.stringify(body, null, '  ')
+            fs.writeFile("MY_API_RESULTS_GOOGLE.json", body, function(err) {
+                if (err) {
+                    console.log('Error with writing JSON file');
+                }
+            });   
+            res.send('Results were Found😁')
+        }
+    })    
+})
+
 // The port for your server
 const PORT = process.env.PORT || 3000
 
