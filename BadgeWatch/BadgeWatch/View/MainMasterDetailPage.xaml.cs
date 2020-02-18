@@ -22,9 +22,25 @@ namespace BadgeWatch.View
         {
             var item = (MasterPageList)e.SelectedItem;
 
-            Application.Current.Properties["MenuName"] = item.Title;
-            Detail = new NavigationPage(new HomeTabbedPage());
-            IsPresented = false;
+            if (item.Title == "Profile")
+            {
+                Detail.Navigation.PushAsync(new ProfilePage());
+                IsPresented = false;
+            } else if (item.Title == "Saved")
+            {
+                Detail.Navigation.PushAsync(new SavePage());
+                IsPresented = false;
+            } else if (item.Title == "About")
+            {
+                Detail.Navigation.PushAsync(new AboutPage());
+                IsPresented = false;
+            }
+            else
+            {
+                Application.Current.Properties["MenuName"] = item.Title;
+                Detail = new NavigationPage(new HomeTabbedPage());
+                IsPresented = false;
+            }
         }
         List<MasterPageList> GetMasterPageLists()
         {
