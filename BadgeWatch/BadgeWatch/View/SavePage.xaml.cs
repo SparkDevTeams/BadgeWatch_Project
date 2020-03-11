@@ -15,6 +15,7 @@ namespace BadgeWatch.View
         public SavePage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
